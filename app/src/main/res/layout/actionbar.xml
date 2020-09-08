@@ -5,6 +5,7 @@
     android:layout_height="?attr/actionBarSize"
     android:background="@color/colorPrimary"
     android:elevation="4dp"
+    app:layout_scrollFlags="scroll|enterAlways"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:menu="@menu/menu_pets"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"

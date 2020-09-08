@@ -1,9 +1,11 @@
-package com.example.semana4;
+package com.example.semana4.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.example.semana4.R;
 
 import java.util.Objects;
 
@@ -15,6 +17,7 @@ public class TopFavoritesPets extends AppCompatActivity {
         setContentView(R.layout.activity_top_favorites_pets);
         Toolbar toolbar = findViewById(R.id.miActionBar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.semana4;
+package com.example.semana4.model;
 
 public class Pet {
     private String petName;
