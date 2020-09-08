@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.semana4.R;
 import com.google.android.material.textfield.TextInputEditText;
@@ -35,6 +36,12 @@ public class Contacto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacto);
+
+        Toolbar toolbar = findViewById(R.id.miActionBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
         tietName = findViewById(R.id.tietName);
         tietEmail = findViewById(R.id.tietEmail);
         tietMessage = findViewById(R.id.tietMessage);
